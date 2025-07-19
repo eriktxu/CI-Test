@@ -1,3 +1,18 @@
+function test(desc, fn){
+    try {
+        fn();
+        console.log('Correcto '+ desc);
+    } catch (error) {
+        console.error('Fallo ' + desc);
+        console.error(" " + error.message);
+    }
+}
+
+function assertEquals(actual, esperado){
+    if(actual !== esperado){
+        throw new Error (`Esperado: ${esperado} pero obtuvo: ${actual}`);
+    }
+}
 
 //Suma
 

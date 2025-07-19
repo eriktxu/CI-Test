@@ -1,7 +1,10 @@
 {
   "name": "js-github-action",
-    "version": "1.0.0",
+  "version": "1.0.0",
   "scripts": {
     "test": "node test/operaciones.test.js"
+  },
+  "dependencies": {
+    "jest": "^30.0.4"
   }
 }
